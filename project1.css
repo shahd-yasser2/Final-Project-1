@@ -1,0 +1,1282 @@
+:root {
+    --color: #676290;
+    --hovercolor: #efc0da;
+
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+}
+
+body {
+    height: 300vh;
+    background-color:#f2e0e9;
+
+}
+
+/*============================================================================*/
+/*=======================start main div ======================================*/
+/*============================================================================*/
+
+
+main {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--color);
+    position: relative;
+
+}
+
+main header {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    background-color: #5e5889c2;
+    z-index: 51;
+}
+
+main header .Logo {
+    width: 25%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+main header .Logo h1 {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-align: center;
+    font-family: cursive;
+    text-shadow: 0px 3px 0.5px rgba(255, 255, 255, 0.471);
+    font-style: oblique;
+    -webkit-font-feature-settings: "swsh";
+
+}
+
+main header .head {
+    width: 60%;
+    height: 100%;
+}
+
+main header .head ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    margin-right: 50px;
+}
+
+main header .head ul li {
+    list-style-type: none;
+    padding: 0px 10px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+main header .head ul li:hover a {
+    color: #de91bb;
+}
+
+main header .head ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 19px;
+    transition: all 0.3s ease-in-out;
+}
+
+@media(max-width : 768px) {
+
+    main header .head ul li {
+        padding: 0px 5px;
+
+    }
+
+    main header .head ul li a {
+        font-size: 17px;
+
+    }
+
+}
+
+@media(max-width :551px) {
+    main header .head {
+        display: none;
+    }
+
+    main header {
+        justify-content: flex-start;
+        text-align: left;
+        padding-left: 50px;
+    }
+}
+
+/*============================================================================*/
+/*=============================End main div ==================================*/
+/*============================================================================*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*============================================================================*/
+/*=======================Start section1  ============================*/
+/*============================================================================*/
+
+main .section1 {
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    bottom: 0px;
+    left: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.section1 .section1_descript {
+    width: 40%;
+    height: 80%;
+    padding: 50px;
+}
+
+.section1 .section1_descript h1 {
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    width: 100%;
+    margin: 35px auto;
+}
+
+.section1 .section1_descript h4 {
+    color: #DBDBDB;
+    font-size: 25px;
+    font-weight: bold;
+    width: 100%;
+    margin: 20px auto;
+}
+
+.section1 .section1_descript button {
+    color: white;
+    background-color: #E8ABCD;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin: 10px;
+    border: none;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+
+
+
+}
+
+.section1 .section1_descript button img {
+    width: 22px;
+    height: 22px;
+    float: left;
+
+}
+
+.section1 .section1_descript button:hover {
+    color: #595483;
+    cursor: pointer;
+    background-color: var(--hovercolor);
+
+}
+
+.section1 .section1_descript .btn2 {
+    background-color: var(--color);
+}
+
+.section1 .section1_descript .btn2:hover {
+    background-color: #E8ABCD;
+
+}
+
+.section1 .section1_pic {
+    width: 40%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section1 .section1_pic img {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+/*==============================Tap===================-=========*/
+
+
+
+@media(max-width : 768px) {
+    .section1 .section1_descript {
+        width: 55%;
+    }
+}
+
+
+
+/*============================Mobile=-===========================*/
+
+
+@media(max-width :551px) {
+    main {
+        height: 150vh;
+    }
+
+    main header {
+        height: 10vh;
+    }
+
+    main .section1 {
+        height: 140vh;
+    }
+
+    .section1 .section1_pic {
+        width: 100%;
+        height: 50%;
+        order: -1;
+    }
+
+    .section1 .section1_descript {
+        width: 100%;
+        height: 50%;
+        padding: 40px;
+        margin-top: 0px;
+
+    }
+
+    .section1 .section1_descript button {
+        font-size: 16px;
+        margin-top: 25px;
+
+    }
+
+    .section1 .section1_descript h1 {
+        font-size: 40px;
+    }
+
+    .section1 .section1_descript h4 {
+        font-size: 18px;
+
+    }
+
+}
+
+
+/*============================================================================*/
+/*======================= End section1  =========================*/
+/*============================================================================*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*============================================================================*/
+/*======================= start section 2 =========================*/
+/*============================================================================*/
+
+
+
+.section2 {
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fde5f3;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+
+}
+
+.section2 .section2_img {
+    width: 6%;
+    height: 40%;
+}
+
+.section2 .section2_img img {
+    width: 100%;
+    height: 100%;
+
+}
+
+/*============================Mobile=-===========================*/
+@media(max-width :551px) {
+
+    .div3,
+    .div4,
+    .div5 {
+        display: none;
+    }
+
+    .section2 .section2_img {
+        width: 17%;
+        height: 75%;
+    }
+
+}
+
+/*==============================Tap===================-=========*/
+
+
+@media(max-width : 768px) {
+
+    .div4,
+    .div5 {
+        display: none;
+    }
+
+    .section2 .section2_img {
+        width: 17%;
+        height: 65%;
+    }
+}
+
+/*============================================================================*/
+/*======================= End section 2 =============================*/
+/*============================================================================*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*==================================================================================*/
+/*====================== start section 3 =============================*/
+/*============================* About_Us *==========================================*/
+
+.section3 {
+    width: 100%;
+    bottom: 50px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+
+}
+
+.section3 h1 {
+    color: #766fa3;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 50px auto;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.section3 h1:After {
+    content: "";
+    width: 210px;
+    height: 3px;
+    background-color: #9b96c3;
+    position: absolute;
+    bottom: 0px;
+    left: 40%;
+    border-radius: 20px;
+
+}
+
+.section3 h1:before {
+    content: "";
+    width: 110px;
+    height: 3px;
+    background-color: #E6A0C7;
+    position: absolute;
+    bottom: 0px;
+    z-index: 551;
+    border-radius: 20px;
+    left: 45%;
+
+}
+
+/*===========================Tap===========================*/
+@media(max-width : 768px) {
+    .section3 h1:After {
+        left: 37%;
+
+    }
+
+    .section3 h1:before {
+        left: 43%;
+
+    }
+}
+
+/*==========================mob=============================*/
+@media(width :320px) {
+    .section3 h1:After {
+        left: 25%;
+
+    }
+
+    .section3 h1:before {
+        left: 37%;
+
+    }
+}
+
+@media(max-width :426px) {
+    .section3 h1:After {
+        left: 27%;
+
+    }
+
+    .section3 h1:before {
+        left: 37%;
+
+    }
+}
+
+
+
+.section3 .Contain {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8e5f0da
+}
+
+.section3 .Contain .section3_About,
+.section3_About2 {
+    width: 35%;
+    height: 80%;
+    margin: 20px 40px;
+    text-align: center;
+
+}
+
+
+.section3 .Contain .section3_About {
+    padding: 5px;
+    align-content: center;
+}
+
+.section3 .Contain .section3_About h2 {
+    color: #766fa3;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 10px 0px;
+}
+
+.section3 .Contain .section3_About h4 {
+    color: #807979;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.section3 .Contain .section3_About2 {
+    align-items: center;
+    align-content: center;
+}
+
+.section3 .Contain .section3_About2 img {
+    margin: auto;
+}
+
+/*===========================Tap===========================*/
+@media(max-width : 768px) {
+
+    .section3 .Contain .section3_About,
+    .section3_About2 {
+        margin: 10px 20px;
+
+    }
+
+    .section3 .Contain .section3_About {
+        padding: 3px;
+
+    }
+
+    .section3 .Contain .section3_About h2 {
+        font-size: 25px;
+        margin: 7px 0px;
+
+    }
+
+    .section3 .Contain .section3_About h4 {
+        font-size: 18px;
+    }
+
+    .section3 .Contain .section3_About,
+    .section3_About2 {
+        width: 100%;
+        height: auto;
+    }
+
+    .section3 .Contain .section3_About2 {
+
+        width: 100%;
+        height: auto;
+    }
+
+    .section3 .Contain .section3_About2 img {
+        width: 80%;
+
+    }
+}
+
+
+/*==========================mob=============================*/
+
+@media(max-width :426px) {
+
+    .section3 .Contain .section3_About,
+    .section3_About2 {
+        margin: 10px 40px;
+
+    }
+
+    .section3 .Contain .section3_About h4 {
+        font-size: 15px;
+    }
+}
+
+
+/*============================================================================*/
+/*=================== End section 3 =============================*/
+/*============================================================================*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*========================================================================*/
+/*==========================Start section4================================*/
+/*=============================Features===================================*/
+
+
+.section4 {
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+}
+
+.section4 h1 {
+    color: #766fa3;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 50px auto;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.section4 h1:After {
+    content: "";
+    width: 210px;
+    height: 3px;
+    background-color: #9b96c3;
+    position: absolute;
+    bottom: 0px;
+    left: 40%;
+    border-radius: 20px;
+
+}
+
+.section4 h1:before {
+    content: "";
+    width: 110px;
+    height: 3px;
+    background-color: #E6A0C7;
+    position: absolute;
+    bottom: 0px;
+    z-index: 551;
+    border-radius: 20px;
+    left: 45%;
+
+}
+
+/*===========================Tap===========================*/
+@media(max-width : 768px) {
+    .section4 h1:After {
+        left: 37%;
+
+    }
+
+    .section4 h1:before {
+        left: 43%;
+
+    }
+}
+
+/*==========================mob=============================*/
+@media(width :320px) {
+    .section4 h1:After {
+        left: 25%;
+
+    }
+
+    .section4 h1:before {
+        left: 37%;
+
+    }
+}
+
+@media(max-width :426px) {
+    .section4 h1:After {
+        left: 27%;
+
+    }
+
+    .section4 h1:before {
+        left: 37%;
+
+    }
+}
+
+
+
+.section4 .Contain {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #fcf2f8b6;
+
+
+}
+
+.section4 .Contain .section4_feat {
+    width: 45%;
+    height: 100%;
+    text-align: center;
+
+
+}
+
+
+.section4 .Contain .section4_feat {
+    padding: 25px;
+    align-content: center;
+}
+
+.section4 .Contain .section4_feat h2 {
+    color: #766fa3;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 10px 0px;
+}
+
+.section4 .Contain .section4_feat h2 span {
+    font-weight: bolder;
+    color: #504979;
+}
+
+.section4 .Contain .section4_feat h4 {
+    color: #807979;
+    font-size: 20px;
+    padding: 5px;
+}
+
+/*===========================Tap===========================*/
+@media(max-width : 768px) {
+
+    .section4 .Contain .section4_feat {
+        margin: 10px 20px;
+
+    }
+
+    .section4 .Contain .section4_feat {
+        padding: 3px;
+
+    }
+
+    .section4 .Contain .section4_feat h2 {
+        font-size: 25px;
+        margin: 7px 0px;
+
+    }
+
+    .section4 .Contain .section4_feat h4 {
+        font-size: 18px;
+    }
+
+    .section4 .Contain .section4_feat {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/*==========================mob=============================*/
+
+@media(max-width :426px) {
+
+    .section4 .Contain .section4_feat {
+        margin: 10px 40px;
+
+    }
+
+    .section4 .Contain .section4_feat h4 {
+        font-size: 15px;
+    }
+}
+
+.section4 .Contain .items {
+    width: 45%;
+    height: 100%;
+    font-size: 23px;
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.section4 .Contain .items .items-item1 {
+    width: 100%;
+    height: auto;
+    padding: 18px;
+    color: #766fa3;
+    background-color: #fbd1e880;
+
+
+
+}
+
+.section4 .Contain .items .items-item1 h4 span {
+    color: #55516b;
+
+}
+
+.section4 .Contain .items .items-item1 h4:hover {
+    color: #55516b;
+}
+
+@media(max-width : 768px) {
+    .section4 .Contain .items {
+        height: 70%;
+        font-size: 19px;
+        padding-top: 10px;
+        width: 100%;
+
+    }
+
+}
+
+@media(max-width :426px) {
+    .section4 .Contain .items {
+        width: 100%;
+        height: auto;
+        font-size: 16px;
+        padding-top: 0px;
+        display: ruby;
+
+    }
+
+}
+
+
+
+/*============================================================================*/
+/*=================== End section 4 =============================*/
+/*============================================================================*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*============================================================================*/
+/*=================== Start section 5 =============================*/
+/*============================================================================*/
+
+
+
+
+
+.section5 {
+    width: 100%;
+
+}
+
+.section5 h1 {
+    color: #766fa3;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 50px auto;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.section5 h1:After {
+    content: "";
+    width: 210px;
+    height: 3px;
+    background-color: #9b96c3;
+    position: absolute;
+    bottom: 0px;
+    left: 40%;
+    border-radius: 20px;
+
+}
+
+.section5 h1:before {
+    content: "";
+    width: 110px;
+    height: 3px;
+    background-color: #E6A0C7;
+    position: absolute;
+    bottom: 0px;
+    z-index: 551;
+    border-radius: 20px;
+    left: 45%;
+
+}
+
+/*===========================Tap===========================*/
+@media(max-width : 768px) {
+    .section5 h1:After {
+        left: 37%;
+
+    }
+
+    .section5 h1:before {
+        left: 43%;
+
+    }
+}
+
+/*==========================mob=============================*/
+@media(width :320px) {
+    .section5 h1:After {
+        left: 25%;
+
+    }
+
+    .section5 h1:before {
+        left: 37%;
+
+    }
+}
+
+@media(max-width :426px) {
+    .section5 h1:After {
+        left: 27%;
+
+    }
+
+    .section5 h1:before {
+        left: 37%;
+
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .column {
+        flex: 50%;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+
+}
+
+
+
+.column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+
+}
+
+
+.row {
+    margin: 0 -5px;
+}
+
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    background-color: #fee6fbf9;
+    color: #504979;
+    transition: width 2s;
+}
+.card:hover{
+    width: 300px;
+
+}
+
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+.column .card .star{
+    padding-bottom: 30px;
+}
+.fa {
+    display: contents;
+    padding: 50px;
+}
+
+.checked {
+   
+    color: #de91bb;
+
+}
+
+
+
+
+
+/*============================================================================*/
+/*=================== End section 5 =============================*/
+/*============================================================================*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*============================================================================*/
+/*=================== Start section 6 =============================*/
+/*========================Contact us===========================================*/
+
+.section6 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color:#eee6ea;
+
+}
+
+.section6 h1 {
+    color: #766fa3;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 50px auto;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.section6 h1:After {
+    content: "";
+    width: 210px;
+    height: 3px;
+    background-color: #9b96c3;
+    position: absolute;
+    bottom: 0px;
+    left: 40%;
+    border-radius: 20px;
+
+}
+
+.section6 h1:before {
+    content: "";
+    width: 110px;
+    height: 3px;
+    background-color: #E6A0C7;
+    position: absolute;
+    bottom: 0px;
+    z-index: 551;
+    border-radius: 20px;
+    left: 45%;
+
+}
+
+/*===========================Tap===========================*/
+@media(max-width : 768px) {
+    .section6 h1:After {
+        left: 37%;
+
+    }
+
+    .section6 h1:before {
+        left: 43%;
+
+    }
+}
+
+/*==========================mob=============================*/
+@media(width :320px) {
+    .section6 h1:After {
+        left: 25%;
+
+    }
+
+    .section6 h1:before {
+        left: 37%;
+
+    }
+}
+
+@media(max-width :445px) {
+    .section6 h1:After {
+        left: 27%;
+
+    }
+
+    .section6 h1:before {
+        left: 37%;
+
+    }
+}
+
+/*===========================================================================*/
+
+.section6 .container{
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    margin-bottom: 50px;
+    
+
+}
+
+input[type=text],
+select,
+textarea {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #facbf4;
+    border-radius: 9px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #f9c7e4;
+    color: #716b9c;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 17px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+}
+
+input[type=submit]:hover {
+    background-color: #716b9c;
+    color: #f9c7e4;
+
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #fcf2f8b6;
+    padding: 20px;
+}
+
+div.scroll-container {
+    background-color: #333;
+    overflow: auto;
+    white-space: nowrap;
+    padding: 10px;
+}
+
+div.scroll-container img {
+    padding: 10px;
+}
+@media(max-width :445px) {
+    .section6 .container{
+        width: 90%;
+    }
+    
+}
+
+
+/*============================================================================*/
+/*=================== End section 6 =============================*/
+/*============================================================================*/
+
+
+footer {
+    text-align: center;
+    padding: 5px;
+    background-color: #fcf2f8b6;
+    color:#504979;
+  }
